@@ -17,3 +17,4 @@ Fine-tuning은 아래 3가지 방식으로 해볼게요
 RoBERTa의 last_hidden_state에서 첫번째 토큰의 hidden vector를 Dense에 입력해서 분류를 수행하는 방식입니다.
 
 3. 
+
