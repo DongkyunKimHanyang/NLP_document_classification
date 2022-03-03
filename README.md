@@ -16,5 +16,13 @@ Fine-tuning은 아래 3가지 방식으로 해볼게요
 1. [CLS] token pooling + Dense
 RoBERTa의 last_hidden_state에서 첫번째 토큰의 hidden vector를 Dense에 입력해서 분류를 수행하는 방식입니다.
 
-3. 
+<img src="https://user-images.githubusercontent.com/87703352/156522668-beaf45da-b150-4af8-b5da-3ea5fad4eaab.png" width="400" height="500">
 
+2. Weighted average pooling + Dense
+RoBERTa의 last_hidden_state에서 모든 토큰 벡터를 weighted average pooling으로 1차원으로 만들어 Dense에 입력하는 방식입니다.
+
+<img src="https://user-images.githubusercontent.com/87703352/156523926-ead773aa-add5-4cb1-8bc9-ccf92c02c957.png" width="700" height="500">
+
+3. LSTM + Dense
+RoBERTa의 last_hidden_state를 LSTM layer + Dense layer에 입력해서 분류를 수행
+<img src="https://user-images.githubusercontent.com/87703352/156526848-8a980d7a-3616-4dcd-8c6f-3825adda8a55.png" width="700" height="500">
