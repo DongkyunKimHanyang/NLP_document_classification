@@ -53,6 +53,6 @@ python3 _3_main.py --head_name dense -- train_batch_size 16 --test_batch_size 25
 train_batch_size = 16, lr =3e-5, warmup_rate=0.3, total_epochs=3으로 했을때 epoch별 test_set 정확도입니다.  
 |Epoch|[CLS] token pooling + Dense|Weighted average pooling + Dense|LSTM + Dense|
 |---|---|---|---|
-|1|93.41|94.38|94.16|
-|2|95.32|95.14||
-|3|95.60|95.46||
+|1|93.41|93.94|94.16|
+|2|95.32|95.33||
+|3|95.60|95.42||
