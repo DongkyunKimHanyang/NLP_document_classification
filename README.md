@@ -27,15 +27,23 @@ RoBERTa의 last_hidden_state에서 모든 토큰 벡터를 weighted average pool
 RoBERTa의 last_hidden_state를 LSTM layer + Dense layer에 입력해서 분류를 수행
 <img src="https://user-images.githubusercontent.com/87703352/156526848-8a980d7a-3616-4dcd-8c6f-3825adda8a55.png" width="700" height="500">
 
-#Version
-Ubuntu == 20.04
-python == 3.8.10
-torch == 1.10.2
-CUDA == 11.3
+# Version
+Ubuntu == 20.04  
+python == 3.8.10  
+torch == 1.10.2  
+CUDA == 11.3  
 
-#실행
+# 실행
 python3 _3_main.py --head_name [dense or avg_dense or lstm] -- train_batch_size [int] --test_batch_size [int] --lr [float] --warup_rate [float] --total_epochs [int]  
 예시:
 ```
-python3 _3_main.py --head_name dense -- train_batch_size 16 --test_batch_size 256 --lr 3e-5 --warup_rate 0.3 --total_epochs 10
+python3 _3_main.py --head_name dense -- train_batch_size 16 --test_batch_size 256 --lr 3e-5 --warup_rate 0.3 --total_epochs 3
 ```
+
+# 결과
+train_batch_size = 16, lr =3e-5, warmup_rate=0.3, total_epochs=3으로 했을때 test_set 정확도입니다.  
+|Epoch|[CLS] token pooling + Dense|Weighted average pooling + Dense|LSTM + Dense|
+|---|---|---|---|
+|1|93.41|||
+|2|95.32|||
+|3|95.60|||
