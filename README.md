@@ -34,8 +34,17 @@ torch == 1.10.2
 CUDA == 11.3  
 
 # 실행
+아래 처럼, _3_main.py 파일에 argment들을 입력하여 실행 시키면됩니다.  
+  
 python3 _3_main.py --head_name [dense or avg_dense or lstm] -- train_batch_size [int] --test_batch_size [int] --lr [float] --warup_rate [float] --total_epochs [int]  
-예시:
+  
+--**head_name**는 dense, avg_dense, lstm은 각각 1,2,3번 방식에 해당하는 헤드를 고르는것 입니다.  
+--**train_batch_size**는 학습과정에서의 배치 크기를 결정합니다.  
+--**test_batch_size**는 추론과정에서의 배치 크기를 결정합니다.  
+--**lr**은 warmup scheduler 방식에서 최고점 lr을 뜻합니다.  
+--**warmup_rate**는 전체 step중 warmup이 차지하는 비율입니다.  
+--**total_epochs**는 총 학습 epoch를 결정합니다.  
+예시:  
 ```
 python3 _3_main.py --head_name dense -- train_batch_size 16 --test_batch_size 256 --lr 3e-5 --warup_rate 0.3 --total_epochs 3
 ```
