@@ -5,10 +5,15 @@ RoBERTa-base 모델을 Backbone으로 사용하고, 기본 적인 layer들을 �
 
 # Dataset - IMDB 리뷰 데이터
 IMDB는 이진 감성 분류를 위한 영화 리뷰 데이터 입니다. 
-Label은 긍정(1) 또는 부정(1)으로 나뉘어 지며,  
+Label은 긍정(1) 또는 부정(0)으로 나뉘어 지며,  
 25,000개의 training set, 25,000개의 test set 샘플들을 포함하고 있습니다.  
-해당 코드 메인문을 실행하면 자동으로 HuggingFace의 Dataset Library로 IMDB 데이터를 불러와 사용합니다.
-
+해당 코드 메인문을 실행하면 자동으로 HuggingFace의 Dataset Library로 IMDB 데이터를 불러와 사용합니다.  
+  
+데이터 예시
+|Text|Label|
+|---|---|
+|I can't believe that those praising this movie herein aren't thinking of some other film...|0(Negative)|
+  
 # 모델 구성
 Backbone 모델로은 HuggingFace에서 RoBERTa-base 모델을 가져와 사용했습니다.
 Fine-tuning은 아래 3가지 방식으로 해볼게요
