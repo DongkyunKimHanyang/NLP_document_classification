@@ -58,6 +58,10 @@ python3 _3_main.py --head_name dense -- train_batch_size 16 --test_batch_size 25
 train_batch_size = 16, lr =3e-5, warmup_rate=0.3, total_epochs=3으로 했을때 epoch별 test_set 정확도입니다.  
 |Epoch|[CLS] token pooling + Dense|Weighted average pooling + Dense|LSTM + Dense|
 |---|---|---|---|
-|1|93.41|93.94|94.16|
-|2|95.32|95.33||
-|3|95.60|95.42||
+|1|93.41|93.94|93.74|
+|2|95.32|95.33|94.67|
+|3|95.60|95.42|95.52|
+
+# 결과
+단순히 Roberta-base 모델을 Fine tuning 하는것 만으로도 95%이상의 성능을 얻을 수 있었습니다.  
+하지만 1,2,3번 방식
