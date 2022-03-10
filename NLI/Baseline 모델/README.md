@@ -38,3 +38,6 @@ warmup_rate = 0.2
 |4|90.33%||
 |5|89.47%||
 |SoftVoting|91.37%|||
+
+# 결론
+5 Fold softvoting으로 NLI 성능이 향상되는것을 관찰 할 수 있었습니다.
