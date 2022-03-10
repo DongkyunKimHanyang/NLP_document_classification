@@ -10,14 +10,15 @@ SNLI 데이터셋의 Backbone으로는 roberta-large를 사용했습니다.
 5 fold 앙상블 방법을 활용했습니다.  
 
 <img src="https://user-images.githubusercontent.com/87703352/157607999-6d378763-2011-4672-bb45-178595d28a54.png" width="700" height="500">  
+
 사용한 Hyperparameter는 아래와 같습니다  
-Total_epoch = 5
-Batch_size = 32
+Total_epoch = 5  
+Batch_size = 32  
 Optimizer = [AdamW](https://arxiv.org/abs/1711.05101)  
 Weight_decay = 1e-3  
 Scheduler = Warmup  
 Max_learning_rate = 3e-5  
-warmup_rate = 0.2
+warmup_rate = 0.2  
 
 # 5Fold의 모델별 validset Accuracy
 |Model|KLUE_NLI|SNLI|
