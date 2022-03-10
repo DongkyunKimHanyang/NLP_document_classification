@@ -20,6 +20,12 @@ Scheduler = Warmup
 Max_learning_rate = 3e-5  
 warmup_rate = 0.2  
 
+# 실행
+```
+python3 train_kfold.py --dataset klue
+python3 inference.py --dataset klue
+```
+
 # 5Fold의 모델별 validset Accuracy
 |Model|KLUE_NLI|SNLI|
 |---|---|---|
@@ -40,4 +46,5 @@ warmup_rate = 0.2
 |SoftVoting|91.37%|||
 
 # 결론
-5 Fold softvoting으로 NLI 성능이 향상되는것을 관찰 할 수 있었습니다.
+5 Fold softvoting으로 KLUE-NLI 데이터셋에 대한 성능이 향상되는것을 관찰 할 수 있었습니다.
+SNLI에 대한 결과는 추후에 추가
