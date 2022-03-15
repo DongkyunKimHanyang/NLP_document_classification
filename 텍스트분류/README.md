@@ -35,7 +35,7 @@ RoBERTa의 last_hidden_state를 LSTM layer + Dense layer에 입력해서 분류�
 4.Transformer + Dense
 분류기에 transformer 레이어를 추가해서 분류를 수행합니다.
 
-<img src="https://user-images.githubusercontent.com/87703352/158358624-42c5fd90-6fd5-466b-af8b-df4abf107374.png)" width="700" height="500">
+<img src="https://user-images.githubusercontent.com/87703352/158358624-42c5fd90-6fd5-466b-af8b-df4abf107374.png" width="700" height="500">
 
 # Version
 Ubuntu == 20.04  
