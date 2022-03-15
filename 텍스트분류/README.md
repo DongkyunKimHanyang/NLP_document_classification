@@ -32,6 +32,11 @@ RoBERTa의 last_hidden_state에서 모든 토큰 벡터를 weighted average pool
 RoBERTa의 last_hidden_state를 LSTM layer + Dense layer에 입력해서 분류를 수행
 <img src="https://user-images.githubusercontent.com/87703352/156526848-8a980d7a-3616-4dcd-8c6f-3825adda8a55.png" width="700" height="500">
 
+4.Transformer + Dense
+분류기에 transformer 레이어를 추가해서 분류를 수행합니다.
+
+<img src="https://user-images.githubusercontent.com/87703352/158358624-42c5fd90-6fd5-466b-af8b-df4abf107374.png)" width="700" height="500">
+
 # Version
 Ubuntu == 20.04  
 python == 3.8.10  
@@ -58,10 +63,11 @@ python3 _3_main.py --head_name dense -- train_batch_size 16 --test_batch_size 25
 train_batch_size = 16, lr =3e-5, warmup_rate=0.3, total_epochs=3으로 했을때 epoch별 test_set 정확도입니다.  
 |Epoch|[CLS] token pooling + Dense|Weighted average pooling + Dense|LSTM + Dense|
 |---|---|---|---|
-|1|93.41|93.94|93.74|
-|2|95.32|95.33|94.67|
-|3|95.60|95.42|95.52|
+|1|93.41|93.94|93.74|94.45%|
+|2|95.32|95.33|94.67|95.35%|
+|3|95.60|95.42|95.52|95.49%|
 
 # 결과
 단순히 Roberta-base 모델을 Fine tuning 하는것 만으로도 95%이상의 성능을 얻을 수 있었습니다.  
-하지만 1,2,3번 방식
+하지만 Classifier head로 좀더 복잡한 레이어를 놓는다고 해서 성능이 나아지지는 않았습니다.
+
