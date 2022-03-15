@@ -15,7 +15,7 @@ from tqdm import tqdm
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--head_name", type=str, default='weight_avg', choices=['cls', 'weight_avg', 'lstm'])
+    parser.add_argument("--head_name", type=str, default='weight_avg', choices=['cls', 'weight_avg', 'lstm', 'tr'])
     parser.add_argument("--train_batch_size", type=int, default=16)
     parser.add_argument("--test_batch_size", type=int, default=256)
     parser.add_argument("--lr", type=float, default=3e-5)
