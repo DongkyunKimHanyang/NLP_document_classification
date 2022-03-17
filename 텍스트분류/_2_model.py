@@ -56,9 +56,9 @@ class lstm_head(nn.Module):#512개의 토큰벡터를 LSTM에 입력한뒤 마�
         outputs = self.dense_classifier(outputs)
         return outputs
 
-class trainsformer_head(nn.Module):
+class transformer_head(nn.Module):
     def __init__(self,config):
-        super(trainsformer_head,self).__init__()
+        super(transformer_head,self).__init__()
         #Roberta-base의 transformer layer를 따라서 구현한 클래스 입니다..
         self.num_heads = 12
         self.attention_head_size = 64
@@ -136,7 +136,7 @@ class text_classification_model(nn.Module):
         elif self.head_name == "lstm":
             self.head_layer = lstm_head(self.config)
         elif self.head_name == "tr":
-            self.head_layer = trainsformer_head(self.config)
+            self.head_layer = transformer_head(self.config)
     def forward(self,input_ids,attention_mask):
         outputs = self.back_bone(input_ids = input_ids, attention_mask = attention_mask).last_hidden_state
         if self.head_name == "tr":
