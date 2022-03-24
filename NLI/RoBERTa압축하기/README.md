@@ -10,7 +10,7 @@ Downstream task를 수행 할때도 이렇게 큰 모델이 필요할까요?
 
 
 # 실험
-[KLUE-NLI](https://klue-benchmark.com/) 데이터 셋에 대해 RoBERTa를 얼마나 작게 하면서, 성능을 유지 할 수있나 실험해보았습니다.  
+[KLUE-NLI](https://klue-benchmark.com/) 데이터 셋에 대해 RoBERTa를  할 수있나 실험해보았습니다.  
 
 pre-trained model: klue/roberta-base. 
 
