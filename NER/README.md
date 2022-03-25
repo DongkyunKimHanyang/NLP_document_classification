@@ -19,7 +19,7 @@ Character level BIO 태깅으로 되어있다.
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |Label|O|O|O|O|O|O|O|B-QT|I-QT|I-QT|O|O|O|O|O|O|
 
-이 저장소에서는 KLUE-NER 데이터를 아래와 같이 word level BIO로 변환 사용 할 예정이다.
+이 저장소에서는 KLUE-NER 데이터를 아래와 같이 word level BIO로 변환하여 사용 할 예정이다.
 |Text|수학|A형의|1등급|커트라인은|
 |---|---|---|---|---|
 |Label|O|O|B-QT|O|
