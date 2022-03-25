@@ -12,6 +12,7 @@ O-outside 는 개체명이 아닌것을 나타낸다.
 
 # 데이터 예시
 ## KLUE-NER
+데이터는 [이곳](https://klue-benchmark.com/)에서 다운 받을 수 있다.  
 Label은 Person(PS), Location(LC), Organization(OG), Date(DT), Time(TI), Quantity(QT) 이렇게 6종류가 있고,  
 Character level BIO 태깅으로 되어있다.  
 |Text|수|학| |A|형|의| |1|등|급||커|트|라|인|은|
@@ -24,6 +25,8 @@ Character level BIO 태깅으로 되어있다.
 |Label|O|O|B-QT|O|
 
 ## CoNLL2003
+데이터는 [이곳](https://www.clips.uantwerpen.be/conll2003/ner/)에서 다운 받을 수 있다.  
+아니면 HuggingFace의 datasets 라이브러리에서 가져다 써도 된다. [링크](https://huggingface.co/datasets/conll2003)  
 Person (PER), Organization(ORG), Location(LOC), Miscellaneous (MISC)이렇게 4종류가 있고,
 Word level BIO 태깅으로 되어있다.
 |EU|rejects|German|call|to|boycott|British|lamb|.|
