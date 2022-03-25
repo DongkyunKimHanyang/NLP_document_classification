@@ -17,6 +17,12 @@ Character level BIO 태깅으로 되어있다.
 |Text|수|학| |A|형|의| |1|등|급||커|트|라|인|은|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |Label|O|O|O|O|O|O|O|B-QT|I-QT|I-QT|O|O|O|O|O|O|
+
+이 저장소에서는 KLUE-NER 데이터를 아래와 같이 word level BIO로 변환 사용 할 예정이다.
+|Text|수학|A형의|1등급|커트라인은|
+|---|---|---|---|---|
+|Label|O|O|B-QT|O|
+
 ## CoNLL2003
 Person (PER), Organization(ORG), Location(LOC), Miscellaneous (MISC)이렇게 4종류가 있고,
 Word level BIO 태깅으로 되어있다.
