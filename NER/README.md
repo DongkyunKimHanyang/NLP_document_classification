@@ -12,7 +12,7 @@ O-outside 는 개체명이 아닌것을 나타낸다.
 
 # 데이터 예시
 ## KLUE-NER
-데이터는 [이곳](https://klue-benchmark.com/)에서 다운 받을 수 있다.  
+데이터에 대한 추가적인 정보는 [이곳](https://klue-benchmark.com/)에 있다.  
 Label은 Person(PS), Location(LC), Organization(OG), Date(DT), Time(TI), Quantity(QT) 이렇게 6종류가 있고,  
 Character level BIO 태깅으로 되어있다.  
 |Text|수|학| |A|형|의| |1|등|급||커|트|라|인|은|
