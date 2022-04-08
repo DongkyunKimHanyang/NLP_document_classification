@@ -7,5 +7,5 @@ BERT 모델 + Start/End position classifier로 구성한 모델을 구성한 저
 
 # Model
 Hugging Face에 배포되어있는 모델들 사용  
-SQuAD: bert-base-case
-KorQuAD, KLUE: klue/roberta-base
+SQuAD: bert-base-case  
+KorQuAD, KLUE: klue/roberta-base  
