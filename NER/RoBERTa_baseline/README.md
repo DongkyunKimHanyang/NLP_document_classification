@@ -53,4 +53,4 @@ Entity level F1-score
 |Macro|0.87|0.87|
   
   
-추가적인 Hyper-parameter tuning 없이는 CRF를 추가 하나 안하나 같은 성능을 보여주었다.
+추가적인 Hyper-parameter tuning 없이는 CRF를 추가 하나 안하나 비슷한 성능을 보여주었습니다.
