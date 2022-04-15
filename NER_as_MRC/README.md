@@ -55,5 +55,13 @@ BERT에 <img width="474" alt="image" src="https://user-images.githubusercontent.
 1.과 2.는 각 토큰이 Answer span의 Start/End Index인지 아닌지 이진 분류한다.  
 예측된 Start-End matching probability 를 3.으로 매칭한다. Cutoff 값은 논문에 따로 나와있지 않다.  
 
+#### Training Loss
+<img width="335" alt="image" src="https://user-images.githubusercontent.com/87703352/163532111-1db128d4-47f5-41d5-9a36-072cb35fd6b8.png">
+<img width="266" alt="image" src="https://user-images.githubusercontent.com/87703352/163532171-275439f3-bff9-41ef-a475-5837c46a13d2.png">
+<img width="337" alt="image" src="https://user-images.githubusercontent.com/87703352/163532246-e2bede8f-5328-4326-b8bb-5f6650942b31.png">
+  
+### Datasets
+#### Nested NER
+[ACE 2004]
 
 
