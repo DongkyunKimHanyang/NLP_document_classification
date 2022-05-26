@@ -24,7 +24,7 @@ KorQuAD, KLUE: klue/roberta-base
 |---|---|---|
 |HasAnswer|86.37|91.36|
 
-## KorQuAD 1.0
+## KLUE-MRC
 |Type|EM|F1|
 |---|---|---|
 |HasAnswer|65.89|69.36|
